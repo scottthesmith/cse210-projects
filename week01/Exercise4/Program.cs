@@ -39,6 +39,7 @@ class Program
             if (digit > largest)
             {
                 largest = digit;
+                
             }
         }
         Console.WriteLine($"The largest number is {largest}");
