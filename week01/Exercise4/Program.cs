@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.Globalization;
-
+//Number Addition, averaging, and largest number
 class Program
 {
     static void Main(string[] args)
@@ -39,7 +39,7 @@ class Program
             if (digit > largest)
             {
                 largest = digit;
-                
+
             }
         }
         Console.WriteLine($"The largest number is {largest}");
