@@ -14,12 +14,12 @@ class Program
         string gradeSign = "";
         int lastDigit = gradeAsInt % 10;
         
+        // Percentage to letter grade conversion
 
         if (gradeAsInt >= 90)
         {
             letterGrade = "A";
         }
-
         else if (gradeAsInt >= 80)
         {
             letterGrade = "B";
@@ -36,6 +36,9 @@ class Program
         {
             letterGrade = "F";
         }
+        
+        //Grade Signs
+
         if (lastDigit >=7)
         {
             gradeSign = "+";
@@ -52,7 +55,13 @@ class Program
         {
             gradeSign = "";
         }
-    
+        if (gradeAsInt >= 97)
+        {
+            gradeSign ="";
+        }
+
+        // Print results
+
         Console.WriteLine($"Your grade is: {letterGrade}{gradeSign}");
 
         if (gradeAsInt >= 70)
