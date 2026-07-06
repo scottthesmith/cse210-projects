@@ -48,7 +48,7 @@ class Program
         {
             gradeSign = "";
         }
-        if (letterGrade == "A" || letterGrade == "F")
+        if (letterGrade == "F")
         {
             gradeSign = "";
         }

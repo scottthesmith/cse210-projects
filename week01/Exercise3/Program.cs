@@ -25,12 +25,12 @@ class Program
 
         // *******
         Random randomGenerator = new Random();
-        int magicNumber = randomGenerator.Next(1,11);
+        int magicNumber = randomGenerator.Next(1,100);
     
 
         int numberGuess = -1;
         Console.WriteLine("");
-        Console.WriteLine("I'm thinking of a number between 1 and 10. Can you guess it?");
+        Console.WriteLine("I'm thinking of a number between 1 and 100. Can you guess it?");
 
         while (numberGuess != magicNumber)
         {
