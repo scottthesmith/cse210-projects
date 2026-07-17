@@ -33,7 +33,7 @@ public class Journal
     public void LoadFromFile(string file)
     {
         string[] lines = System.IO.File.ReadAllLines(file);
-        _entries.Clear(); 
+        //_entries.Clear(); 
         foreach (string line in lines)
         {
             string[] parts = line.Split("|");
