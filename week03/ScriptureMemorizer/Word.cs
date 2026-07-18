@@ -36,8 +36,6 @@ public class Word
             int _missingText = _text.Length;
             return new string('_',_missingText);
             
-            
-            
         }
         else
         {
