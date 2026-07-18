@@ -4,7 +4,7 @@ using System.Security.Cryptography.X509Certificates;
 
 public class Scripture
 {
-   private Reference _reference;
+   public Reference _reference;
    List<Word> _words = new List<Word>();
 
    public Scripture(Reference reference, string text)
@@ -38,8 +38,11 @@ public class Scripture
         {
             int index = randomWord.Next(_words.Count);
             Word word = _words[index];
-            word.Hide();
-            counter++;
+            if (word.IsHidden() == false)
+            {
+                word.Hide();
+                counter++;
+            }
 
         }
     }
@@ -49,11 +52,14 @@ public class Scripture
         bool allHidden = true;
         foreach (Word word in _words)
         {
-            if IsHidden(Word)
+            if (word.IsHidden() == false)
             {
                 allHidden = false;
+                
             }
+        
         }
+    return allHidden;
         
     }
 
