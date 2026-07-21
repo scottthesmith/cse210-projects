@@ -7,7 +7,7 @@ public class Word
 
     public Word(string text)
     {
-         _text = text;
+        _text = text;
         _isHidden = false;
     }
     public void Hide()
@@ -16,7 +16,7 @@ public class Word
     }
     public void Show()
     {
-       _isHidden = false;
+        _isHidden = false;
     }
     public bool IsHidden()
     {
@@ -33,16 +33,12 @@ public class Word
     {
         if (_isHidden == true)
         {
-            int _missingText = _text.Length;
-            return new string('_',_missingText);
-            
+            int missingText = _text.Length;
+            return new string('_',missingText);
         }
         else
         {
             return _text;
         }
     }
-  
-
-
 }
