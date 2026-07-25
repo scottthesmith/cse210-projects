@@ -21,7 +21,6 @@ class Program
         Comment vid3Comment2 = new Comment("Gi Dorah", "I don't know. He seems pretty wimpy to me.");
         Comment vid3Comment3 = new Comment("Ro Dan", "I could take him.");
 
-
         vid1.AddComment(vid1Comment1);
         vid1.AddComment(vid1Comment2);
         vid1.AddComment(vid1Comment3);
