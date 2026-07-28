@@ -17,6 +17,7 @@ class Program
         Product p1 = new Product("3322", "White Gloves", 99.99, 2);
         Product p2 = new Product("3323", "Magical Lake Sword", 9999.99, 1);
         Product p3 = new Product("3324", "Giant yellow shoes", 55.00, 2);
+        Product p4 = new Product("3325", "Very Nice Cup", 100000000000000.99, 1);
 
         //Orders here
         Order order1 = new Order(usaCustomer);
@@ -26,6 +27,7 @@ class Program
         order1.AddProduct(p3);
 
         order2.AddProduct(p2);
+        order2.AddProduct(p4);
 
         Console.WriteLine("===================================");
         Console.WriteLine("ORDER 1");
