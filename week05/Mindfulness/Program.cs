@@ -4,6 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the Mindfulness Project.");
+        Activity a1 = new Activity();
+        {
+            a1.DisplayStartingMessage();
+            string userChoice = Console.ReadLine();
+        }
     }
 }

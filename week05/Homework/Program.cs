@@ -5,10 +5,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        Assignment a1 = new Assignment("Scott Smith", "Divination");
+        Assignment a1 = new Assignment("Samuel Bennett", "Multiplication");
         string name = a1.GetSummary();
         Console.WriteLine(name);
-        MathAssignment m1 = new MathAssignment("Yummy Tommy", "fractions", "5.4", "15-25");
+        MathAssignment m1 = new MathAssignment("Roberto Rodriguez", "Fractions", "7.3", "8-19");
         Console.WriteLine(m1.GetSummary());
         Console.WriteLine(m1.GetHomeworkList());
 
