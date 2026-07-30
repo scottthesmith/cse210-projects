@@ -180,7 +180,7 @@
             "program": "${workspaceFolder}/week05/Mindfulness/bin/Debug/net10.0/Mindfulness.dll",
             "args": [],
             "cwd": "${workspaceFolder}/week05/Mindfulness",
-            "console": "integratedTerminal",
+            "console": "externalTerminal",
             "internalConsoleOptions": "neverOpen",
             "stopAtEntry": false
         },
