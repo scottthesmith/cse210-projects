@@ -1,11 +1,14 @@
 using System;
 using System.Runtime.Intrinsics.X86;
-// Made it so that the questions in the Reflecting activity won't be duplicated until each question has been asked.
+// Made it so that the questions in the Reflecting activity won't be duplicated until each question has been asked, and 
+//created a counter that displays how many exercises you completed for that run.
 class Program
 {
     static void Main(string[] args)
     {
         string userChoice = "";
+        int sessionsCompleted = 0;
+        
 
         while (userChoice != "4")
         {
@@ -15,6 +18,7 @@ class Program
             Console.WriteLine(" 2. Start reflecting activity");
             Console.WriteLine(" 3. Start listing activity");
             Console.WriteLine(" 4. Quit");
+            Console.WriteLine($"You have completed a total of {sessionsCompleted} sessions this run.");
 
             Console.WriteLine("Select a choice from the menu: ");
             userChoice = Console.ReadLine();
@@ -26,6 +30,7 @@ class Program
                 BreathingActivity b1 = new BreathingActivity();
                 {
                     b1.Run();
+                    sessionsCompleted++;
                 }
                 
             }
@@ -36,6 +41,7 @@ class Program
                 ReflectingActivity r1 = new ReflectingActivity();
                 {
                     r1.Run();
+                    sessionsCompleted++;
                 }
             }
             else if (userChoice == "3")
@@ -45,6 +51,7 @@ class Program
                 ListingActivity l1 = new ListingActivity();
                 {
                     l1.Run();
+                    sessionsCompleted++;
                 }
             }
            
