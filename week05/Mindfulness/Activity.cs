@@ -3,8 +3,8 @@ using System.Data.SqlTypes;
 
 public class Activity
 {
-    protected string _name;
-    protected string _description;
+    private string _name;
+    private string _description;
     protected int _duration;
     
 
