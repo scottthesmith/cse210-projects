@@ -1,16 +1,17 @@
 
 
+using System.Reflection.Metadata.Ecma335;
+
 public class Square : Shape
 {
-    public Square(string color, int _side) : base(color)
+    private double _side;
+    public Square(string color, double side) : base (color)
     {
-        
+        _side = side;
     }
-
-     private double _side;
 
     public override double GetArea()
     {
-        return _side;
+        return _side * _side;
     }
 }
